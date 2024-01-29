@@ -1,0 +1,185 @@
+2024-01-28 23:24:12.003 -05:00  INF  Now listening on: http://localhost:5114
+2024-01-28 23:24:12.015 -05:00  INF  Application started. Press Ctrl+C to shut down.
+2024-01-28 23:24:12.016 -05:00  INF  Hosting environment: Development
+2024-01-28 23:24:12.016 -05:00  INF  Content root path: C:\Users\nhkcm\source\repos\N5TLTest\N5TLTest
+2024-01-28 23:24:12.633 -05:00  INF  Request starting HTTP/1.1 GET http://localhost:5114/swagger - null null
+2024-01-28 23:24:12.707 -05:00  INF  Request finished HTTP/1.1 GET http://localhost:5114/swagger - 301 0 null 74.6548ms
+2024-01-28 23:24:12.711 -05:00  INF  Request starting HTTP/1.1 GET http://localhost:5114/swagger/index.html - null null
+2024-01-28 23:24:12.822 -05:00  INF  Request starting HTTP/1.1 GET http://localhost:5114/swagger/swagger-ui.css - null null
+2024-01-28 23:24:12.822 -05:00  INF  Request finished HTTP/1.1 GET http://localhost:5114/swagger/index.html - 200 null text/html;charset=utf-8 111.2504ms
+2024-01-28 23:24:12.831 -05:00  INF  Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-01-28 23:24:12.831 -05:00  INF  Request finished HTTP/1.1 GET http://localhost:5114/swagger/swagger-ui.css - 200 143943 text/css 9.639ms
+2024-01-28 23:24:12.839 -05:00  INF  Request starting HTTP/1.1 GET http://localhost:5114/swagger/swagger-ui-standalone-preset.js - null null
+2024-01-28 23:24:12.839 -05:00  INF  Request starting HTTP/1.1 GET http://localhost:5114/swagger/swagger-ui-bundle.js - null null
+2024-01-28 23:24:12.839 -05:00  INF  Request starting HTTP/1.1 GET http://localhost:5114/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-28 23:24:12.840 -05:00  INF  Request starting HTTP/1.1 GET http://localhost:5114/_vs/browserLink - null null
+2024-01-28 23:24:12.847 -05:00  INF  Request finished HTTP/1.1 GET http://localhost:5114/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 7.4972ms
+2024-01-28 23:24:12.853 -05:00  INF  Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-01-28 23:24:12.853 -05:00  INF  Request finished HTTP/1.1 GET http://localhost:5114/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 13.7796ms
+2024-01-28 23:24:12.858 -05:00  INF  Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-01-28 23:24:12.858 -05:00  INF  Request finished HTTP/1.1 GET http://localhost:5114/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 19.0278ms
+2024-01-28 23:24:12.866 -05:00  INF  Request finished HTTP/1.1 GET http://localhost:5114/_vs/browserLink - 200 null text/javascript; charset=UTF-8 26.6126ms
+2024-01-28 23:24:13.008 -05:00  INF  Request starting HTTP/1.1 GET http://localhost:5114/swagger/v1/swagger.json - null null
+2024-01-28 23:24:13.020 -05:00  INF  Request starting HTTP/1.1 GET http://localhost:5114/swagger/favicon-32x32.png - null null
+2024-01-28 23:24:13.020 -05:00  INF  Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-01-28 23:24:13.020 -05:00  INF  Request finished HTTP/1.1 GET http://localhost:5114/swagger/favicon-32x32.png - 200 628 image/png 0.3759ms
+2024-01-28 23:24:13.046 -05:00  INF  Request finished HTTP/1.1 GET http://localhost:5114/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 37.7655ms
+2024-01-28 23:24:26.611 -05:00  INF  Request starting HTTP/1.1 POST http://localhost:5114/api/Employee - application/json 98
+2024-01-28 23:24:26.614 -05:00  INF  Executing endpoint 'N5TLTest.Controllers.EmployeeController.CreateEmployee (N5TLTest)'
+2024-01-28 23:24:26.624 -05:00  INF  Route matched with {action = "CreateEmployee", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task CreateEmployee(N5TLTest.Commands.Employee.AddEmployeeCommand) on controller N5TLTest.Controllers.EmployeeController (N5TLTest).
+2024-01-28 23:24:27.589 -05:00  INF  Executed DbCommand (21ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Employees] ([Id], [FirstName], [LastName])
+VALUES (@p0, @p1, @p2);
+2024-01-28 23:24:27.596 -05:00  INF  employee created with id: "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+2024-01-28 23:24:27.598 -05:00  INF  Executed action N5TLTest.Controllers.EmployeeController.CreateEmployee (N5TLTest) in 972.3308ms
+2024-01-28 23:24:27.598 -05:00  INF  Executed endpoint 'N5TLTest.Controllers.EmployeeController.CreateEmployee (N5TLTest)'
+2024-01-28 23:24:27.601 -05:00  INF  Request finished HTTP/1.1 POST http://localhost:5114/api/Employee - 200 0 null 989.9948ms
+2024-01-28 23:27:29.764 -05:00  INF  Now listening on: http://localhost:5114
+2024-01-28 23:27:29.781 -05:00  INF  Application started. Press Ctrl+C to shut down.
+2024-01-28 23:27:29.781 -05:00  INF  Hosting environment: Development
+2024-01-28 23:27:29.781 -05:00  INF  Content root path: C:\Users\nhkcm\source\repos\N5TLTest\N5TLTest
+2024-01-28 23:27:31.070 -05:00  INF  Request starting HTTP/1.1 GET http://localhost:5114/swagger/index.html - null null
+2024-01-28 23:27:31.161 -05:00  INF  Request finished HTTP/1.1 GET http://localhost:5114/swagger/index.html - 200 null text/html;charset=utf-8 90.8511ms
+2024-01-28 23:27:31.177 -05:00  INF  Request starting HTTP/1.1 GET http://localhost:5114/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-28 23:27:31.177 -05:00  INF  Request starting HTTP/1.1 GET http://localhost:5114/_vs/browserLink - null null
+2024-01-28 23:27:31.178 -05:00  INF  Request finished HTTP/1.1 GET http://localhost:5114/_framework/aspnetcore-browser-refresh.js - 200 13752 application/javascript; charset=utf-8 1.1505ms
+2024-01-28 23:27:31.185 -05:00  INF  Request finished HTTP/1.1 GET http://localhost:5114/_vs/browserLink - 200 null text/javascript; charset=UTF-8 8.1602ms
+2024-01-28 23:27:31.360 -05:00  INF  Request starting HTTP/1.1 GET http://localhost:5114/swagger/v1/swagger.json - null null
+2024-01-28 23:27:31.399 -05:00  INF  Request finished HTTP/1.1 GET http://localhost:5114/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 39.5787ms
+2024-01-28 23:27:46.070 -05:00  INF  Request starting HTTP/1.1 POST http://localhost:5114/api/Employee - application/json 104
+2024-01-28 23:27:46.075 -05:00  INF  Executing endpoint 'N5TLTest.Controllers.EmployeeController.CreateEmployee (N5TLTest)'
+2024-01-28 23:27:46.092 -05:00  INF  Route matched with {action = "CreateEmployee", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task CreateEmployee(N5TLTest.Commands.Employee.AddEmployeeCommand) on controller N5TLTest.Controllers.EmployeeController (N5TLTest).
+2024-01-28 23:27:46.909 -05:00  ERR  Failed executing DbCommand (25ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Employees] ([Id], [FirstName], [LastName])
+VALUES (@p0, @p1, @p2);
+2024-01-28 23:27:46.926 -05:00  ERR  An exception occurred in the database while saving changes for context type 'N5Test.Database.N5CompanyContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK_Employees'. Cannot insert duplicate key in object 'dbo.Employees'. The duplicate key value is (3fa85f64-5717-4562-b3fc-2c963f66afa6).
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:5e00f90a-28b7-4bed-bbe3-61d8a06fd3ca
+Error Number:2627,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK_Employees'. Cannot insert duplicate key in object 'dbo.Employees'. The duplicate key value is (3fa85f64-5717-4562-b3fc-2c963f66afa6).
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:5e00f90a-28b7-4bed-bbe3-61d8a06fd3ca
+Error Number:2627,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+
+2024-01-28 23:27:47.036 -05:00  INF  Executed action N5TLTest.Controllers.EmployeeController.CreateEmployee (N5TLTest) in 941.5552ms
+2024-01-28 23:27:47.037 -05:00  INF  Executed endpoint 'N5TLTest.Controllers.EmployeeController.CreateEmployee (N5TLTest)'
+2024-01-28 23:27:47.040 -05:00  ERR  An unhandled exception has occurred while executing the request.Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK_Employees'. Cannot insert duplicate key in object 'dbo.Employees'. The duplicate key value is (3fa85f64-5717-4562-b3fc-2c963f66afa6).
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:5e00f90a-28b7-4bed-bbe3-61d8a06fd3ca
+Error Number:2627,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at N5TLTest.Database.repositories.EmployeeRepositoty.Add(AddEmployeeCommand command) in C:\Users\nhkcm\source\repos\N5TLTest\N5TLTest\Database\repositories\EmployeeRepositoty.cs:line 23
+   at N5TLTest.Handlers.EmployeesCommandHandler.Handle(AddEmployeeCommand command) in C:\Users\nhkcm\source\repos\N5TLTest\N5TLTest\Handlers\EmployeesCommandHandler.cs:line 21
+   at N5TLTest.Controllers.EmployeeController.CreateEmployee(AddEmployeeCommand command) in C:\Users\nhkcm\source\repos\N5TLTest\N5TLTest\Controllers\EmployeeController.cs:line 30
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+
+2024-01-28 23:27:47.051 -05:00  INF  Request finished HTTP/1.1 POST http://localhost:5114/api/Employee - 500 null text/plain; charset=utf-8 981.5929ms
+2024-01-28 23:27:55.511 -05:00  INF  Request starting HTTP/1.1 POST http://localhost:5114/api/Employee - application/json 104
+2024-01-28 23:27:55.512 -05:00  INF  Executing endpoint 'N5TLTest.Controllers.EmployeeController.CreateEmployee (N5TLTest)'
+2024-01-28 23:27:55.513 -05:00  INF  Route matched with {action = "CreateEmployee", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task CreateEmployee(N5TLTest.Commands.Employee.AddEmployeeCommand) on controller N5TLTest.Controllers.EmployeeController (N5TLTest).
+2024-01-28 23:27:55.568 -05:00  INF  Executed DbCommand (17ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Employees] ([Id], [FirstName], [LastName])
+VALUES (@p0, @p1, @p2);
+2024-01-28 23:27:55.572 -05:00  INF  employee created with id: "2fa85f64-5717-4562-b3fc-2c963f66afa6"
+2024-01-28 23:27:55.573 -05:00  INF  Executed action N5TLTest.Controllers.EmployeeController.CreateEmployee (N5TLTest) in 59.4592ms
+2024-01-28 23:27:55.573 -05:00  INF  Executed endpoint 'N5TLTest.Controllers.EmployeeController.CreateEmployee (N5TLTest)'
+2024-01-28 23:27:55.573 -05:00  INF  Request finished HTTP/1.1 POST http://localhost:5114/api/Employee - 200 0 null 61.8284ms

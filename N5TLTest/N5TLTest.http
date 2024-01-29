@@ -1,0 +1,6 @@
+@N5TLTest_HostAddress = http://localhost:5114
+
+GET {{N5TLTest_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
